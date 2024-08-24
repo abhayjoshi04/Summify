@@ -1,0 +1,25 @@
+# Node.js
+node_modules/
+
+# Logs
+logs
+*.log
+
+# Environment variables
+.env
+
+# Optional npm cache directory
+.npm
+
+# Dependency directories
+jspm_packages/
+
+# Optional REPL history
+.node_repl_history
+
+# Output directories
+dist/
+build/
+
+# Ignore DS_Store for macOS users
+.DS_Store
