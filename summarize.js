@@ -18,7 +18,7 @@ async function summarizeText(text) {
             'Authorization': 'Bearer ' + process.env["ACCESS_TOKEN"]
         },
         data: data,
-        timeout: 5000 // Set a timeout for the request
+        timeout: 5000 
     };
 
     try {
@@ -28,7 +28,7 @@ async function summarizeText(text) {
     } catch (error) {
         if (error.code === 'EAI_AGAIN') {
             console.log('Network error, retrying...');
-            return summarizeText(text); // Retry the request
+            return summarizeText(text); 
         }
         console.log(error);
         return 'An error occurred during summarization.';
